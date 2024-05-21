@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PANDORA - İletişim </title>
+    
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <h1>PANDORA</h1>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="üyeol.html"style="color: red;">Üye Ol</a></li>
+                <li><a href="sepetim.html">Sepetim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container2">
+            <h1>HESAP AÇMA</h1>
+            
+                <label for="ad">Adınız:</label>
+                <input type="text" id="ad" name="ad" required>
+    
+                <label for="soyad">Soyadınız:</label>
+                <input type="text" id="soyad" name="soyad" required>
+    
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="şifre">Şifre:</label>
+                <textarea name="şifre" id="şifre" rows="4" required></textarea>
+    
+                <button onclick="hesapoluştur()" class="buton">HESAP OLUŞTUR</button>
+
+        </div>
+    </section>
+    
+</body>
+<script src="main.js"></script>
+</html>

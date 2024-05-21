@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>PANDORA - sepet</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <h1>PANDORA</h1>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="üyeol.html">Üye Ol</a></li>
+                <li><a href="sepetim.html"style="color: red;">Sepetim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Alışveriş Sepeti</h1>
+        
+        <div class="islemler">
+            <h2>İşlemler</h2>
+            <label for="urun-ad">Ürün Adı:</label>
+        <select id="urun-ad">
+            <option value="Işıltılı Tam Tur Taşlı Yüzük - 2,879,00 TL">Işıltılı Tam Tur Taşlı Yüzük</option>
+            <option value="DIşıltılı Hebaryum Çivi Küpe - 2.149,00 TL">Işıltılı Hebaryum Çivi Küpe</option>
+            <option value="Işıltılı Tenis Bileziği - 3.249,00 TL">Işıltılı Tenis Bileziği </option>
+            <option value="Lavanta Rengi Murano Charm - 1.059,00 TL">Lavanta Rengi Murano Charm </option>
+            <option value="Işıltılı Kalp Sallantılı Charm - 1.789,00 TL">Işıltılı Kalp Sallantılı Charm</option>
+             <option value="Kalpli Sonsuzluk Yüzüğü - 3.249,00 TL">Kalpli Sonsuzluk Yüzüğü </option>
+            
+        </select>
+            <label for="urun-adet">Adet:</label>
+            <input type="number" id="urun-adet">
+            <button onclick="urunEkle()">Sepete Ekle</button>
+            <button onclick="urunSil()">Sepetten Sil</button>
+        </div>
+    </div>
+    <div class="sepet">
+        <h2>Sepetinizdeki Ürünler</h2>
+        <ul id="urunler-listesi"></ul>
+        
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
